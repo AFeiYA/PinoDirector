@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pino Director - Projects</title>
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/base.css">
+  <style>
+    .page-header {
+      text-align: center;
+      padding: 48px 32px 24px;
+    }
+    .page-header h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .page-header p {
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      padding: 24px 64px 64px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .project-card {
+      background: var(--bg-secondary);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      border: 1px solid rgba(255,255,255,0.05);
+      cursor: pointer;
+      transition: var(--transition-normal);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .project-card:hover {
+      border-color: var(--accent-primary);
+      transform: translateY(-6px);
+      box-shadow: 0 16px 32px rgba(0,0,0,0.4);
+    }
+    .project-card h2 { font-size: 22px; }
+    .project-card .stats {
+      font-size: 11px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .loading {
+      text-align: center;
+      padding: 48px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body style="overflow: auto;">
+  <div class="page-header">
+    <h1>Pino Director</h1>
+    <p>Select a project to start editing storyboards</p>
+  </div>
+  <div id="project-list" class="project-grid">
+    <div class="loading">Loading projects...</div>
+  </div>
+
+  <script type="module">
+    const list = document.getElementById('project-list');
+
+    try {
+      const res = await fetch('/api/projects');
+      const projects = await res.json();
+
+      list.innerHTML = '';
+      projects.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        card.innerHTML = `
+          <div class="stats">Project</div>
+          <h2>${p.name}</h2>
+          <div class="stats">${p.framesPerShot || 3} frames per shot • ${p.version || '1.0'}</div>
+        `;
+        card.onclick = () => window.location.href = `./editor.html?project=${p.id}`;
+        list.appendChild(card);
+      });
+
+      if (projects.length === 0) {
+        list.innerHTML = '<div class="loading">No projects found. Add a folder to projects/</div>';
+      }
+    } catch (err) {
+      list.innerHTML = '<div class="loading">Cannot connect to API. Run npm run dev first.</div>';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Shot Card in Timeline */
+.shot-card {
+  padding: 12px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  margin-bottom: 8px;
+}
+
+.shot-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(4px);
+}
+
+.shot-card.active {
+  background: var(--accent-glow);
+  border-left-color: var(--accent-primary);
+}
+
+.shot-card .meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  color: var(--text-dim);
+}
+
+.shot-card .lyric {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Upload Zones */
+.upload-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.upload-box {
+  aspect-ratio: 16 / 9;
+  background: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-normal);
+}
+
+.upload-box:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.upload-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload-box .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(37, 99, 235, 0.6);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-fast);
+}
+
+.upload-box:hover .overlay {
+  opacity: 1;
+}
+
+/* Prompt Areas */
+.prompt-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.prompt-block {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.prompt-block h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prompt-text {
+  font-size: 14px;
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 60px;
+  outline: none;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+}
+
+.prompt-text:focus {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px;
+}
+
+/* Chart Container */
+.chart-wrapper {
+  height: 160px;
+  margin-top: 32px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+}

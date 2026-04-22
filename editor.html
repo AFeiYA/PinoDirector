@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pino Director - Editor</title>
+  <link rel="stylesheet" href="./src/css/variables.css">
+  <link rel="stylesheet" href="./src/css/base.css">
+  <link rel="stylesheet" href="./src/css/layout.css">
+  <link rel="stylesheet" href="./src/css/components.css">
+</head>
+<body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div style="padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <div class="flex items-center" style="gap: 12px;">
+          <div style="width: 32px; height: 32px; background: var(--accent-secondary); border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-style: italic;">P</div>
+          <div>
+            <div style="font-size: 10px; font-weight: 800; text-transform: uppercase; color: var(--text-dim);">Director Cloud</div>
+            <div id="project-name" style="font-size: 14px; font-weight: 800;">Loading...</div>
+          </div>
+        </div>
+      </div>
+      <div id="timeline" class="timeline-scroll scrollbar-hide"></div>
+      <div style="padding: 16px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div id="sync-status" style="font-size: 9px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">Connecting...</div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="header">
+        <div class="flex items-center" style="gap: 24px;">
+          <a href="./index.html" style="color: var(--text-dim); font-size: 12px; text-decoration: none; font-weight: 700; text-transform: uppercase;">&larr; Projects</a>
+          <div style="height: 16px; width: 1px; background: rgba(255,255,255,0.1);"></div>
+          <div id="shot-label" style="font-size: 10px; font-weight: 800; color: var(--accent-primary); text-transform: uppercase; letter-spacing: 0.2em;">Shot #01</div>
+        </div>
+        <div class="flex items-center" style="gap: 16px;">
+          <div class="flex flex-col" style="align-items: flex-end;">
+            <span style="font-size: 8px; font-weight: 800; color: var(--text-muted); text-transform: uppercase;">Progress</span>
+            <span id="progress-text" style="font-size: 10px; color: var(--accent-primary); font-family: 'JetBrains Mono';">0 / 0 Frames</span>
+          </div>
+          <button id="btn-export" style="background: rgba(255,255,255,0.05); color: var(--text-main); font-size: 10px; font-weight: 800; padding: 8px 16px; border-radius: 4px; text-transform: uppercase;">Export</button>
+        </div>
+      </header>
+
+      <div class="editor-body">
+        <div class="flex justify-between" style="align-items: flex-start; margin-bottom: 24px;">
+          <div>
+            <h2 id="act-title" style="font-size: 32px; font-style: italic; text-transform: uppercase;">Act I: Lost</h2>
+            <p id="shot-time" style="font-size: 10px; font-family: 'JetBrains Mono'; color: var(--text-dim); margin-top: 4px;">00:00 - Audio Segment</p>
+          </div>
+          <div class="glass" style="padding: 12px 16px; border-radius: var(--radius-md); max-width: 400px;">
+            <span style="font-size: 8px; font-weight: 800; color: var(--accent-primary); text-transform: uppercase; display: block; margin-bottom: 4px;">Current Lyric</span>
+            <p id="lyric-text" style="font-size: 13px; font-style: italic; color: var(--text-main);">...</p>
+          </div>
+        </div>
+
+        <div class="upload-grid" id="upload-grid"></div>
+
+        <div class="prompt-container">
+          <div class="prompt-block">
+            <h3>Veo Video Prompt (EN) <button class="btn-copy" data-target="prompt-en">Copy</button></h3>
+            <div id="prompt-en" class="prompt-text" contenteditable="true">...</div>
+          </div>
+          <div class="prompt-block">
+            <h3>核心描述 (CN) <button class="btn-copy" data-target="prompt-cn">Copy</button></h3>
+            <div id="prompt-cn" class="prompt-text" contenteditable="true">...</div>
+          </div>
+          <div class="prompt-block" style="grid-column: span 2;">
+            <h3>Motion & Camera <button class="btn-copy" data-target="prompt-motion">Copy</button></h3>
+            <div id="prompt-motion" class="prompt-text" contenteditable="true" style="min-height: 40px;">...</div>
+          </div>
+        </div>
+
+        <div class="chart-wrapper">
+          <canvas id="intensity-chart"></canvas>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <input type="file" id="file-input" accept="image/*" class="hidden">
+  <script type="module" src="./src/js/app.js"></script>
+</body>
+</html>

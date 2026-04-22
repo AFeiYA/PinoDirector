@@ -1,0 +1,8 @@
+{
+  "id": "the-hollow",
+  "name": "《我没有大脑》",
+  "version": "1.0",
+  "framesPerShot": 3,
+  "frameLabels": ["Start Frame", "Transition", "End Frame"],
+  "createdAt": "2026-04-22"
+}

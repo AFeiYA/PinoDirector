@@ -1,0 +1,51 @@
+:root {
+  /* Core Colors */
+  --bg-primary: #020617;
+  --bg-secondary: #0f172a;
+  --bg-surface: rgba(15, 23, 42, 0.8);
+  --bg-card: #1e293b;
+  
+  --accent-primary: #3b82f6;
+  --accent-secondary: #2563eb;
+  --accent-glow: rgba(37, 99, 235, 0.3);
+  
+  --text-main: #f1f5f9;
+  --text-dim: #94a3b8;
+  --text-muted: #64748b;
+  
+  /* Status Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  
+  /* Acts Colors */
+  --act-1: #64748b;
+  --act-2: #a21caf;
+  --act-3: #f97316;
+  --act-4: #fef08a;
+
+  /* Spacing & Sizes */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  --sidebar-width: 320px;
+  --header-height: 64px;
+}
+
+.glass {
+  background: var(--bg-surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

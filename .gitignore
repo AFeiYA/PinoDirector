@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.DS_Store
+dist/
+dist-ssr/
+*.local
+
+# Editor / IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Scratch & Temporary
+scratch/
+*.log
+
+# Project Specific
+# We keep projects/ because it contains the master shots data
+# But if you store heavy local frames, you might want to ignore them 
+# and use GitHub links instead. For now, we include them.
+# projects/*/frames/

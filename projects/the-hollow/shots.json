@@ -1,0 +1,424 @@
+{
+  "projectName": "我没有大脑",
+  "totalShots": 36,
+  "acts": [
+    {
+      "id": "act-I",
+      "name": "Act I: Lost",
+      "color": "#64748b"
+    },
+    {
+      "id": "act-II",
+      "name": "Act II: Seeking",
+      "color": "#a21caf"
+    },
+    {
+      "id": "act-III",
+      "name": "Act III: Awakening",
+      "color": "#f97316"
+    },
+    {
+      "id": "act-IV",
+      "name": "Act IV: Returning",
+      "color": "#fef08a"
+    }
+  ],
+  "shots": [
+    {
+      "id": 1,
+      "start": "00:00",
+      "lyric": "Intro A: 寒风穿过麦田",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 2,
+      "pEn": "Cinematic wide shot, Asian manga aesthetic, a desolate scarecrow silhouette in a vast withered wheat field, pale gray overcast sky, subtle wind blowing through dry straw, extremely melancholic atmosphere, hand-drawn ink textures.",
+      "pCn": "电影全景，亚洲漫画美学，广袤麦田中的稻草人剪影，苍白阴天，忧郁氛围。",
+      "motion": "Extremely slow zoom out, reveal vastness of empty field."
+    },
+    {
+      "id": 2,
+      "start": "00:05",
+      "lyric": "Intro B: 生锈的卡顿声",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 3,
+      "pEn": "Macro close-up, rusted metal wind-up key on the back of a scarecrow, aged copper texture, floating dust particles, anime style with hyper-detailed textures.",
+      "pCn": "宏观特写，稻草人背部的生锈发条钥匙，陈旧铜纹理，漂浮灰尘。",
+      "motion": "Focus on the key, it jerks slightly and stays stuck, metallic shudder."
+    },
+    {
+      "id": 3,
+      "start": "00:09",
+      "lyric": "Intro C: 胸口玫瑰破洞",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 2,
+      "pEn": "Extreme close-up, a rose-shaped hole on blue ragged fabric, dark hollow interior, few withered straw fibers leaking out, sorrowful aesthetic.",
+      "pCn": "极细特写，蓝色罩衫上的玫瑰形孔洞，漆黑空洞，漏出秸秆。",
+      "motion": "Camera tilts up slowly from the hole to the chin."
+    },
+    {
+      "id": 4,
+      "start": "00:13",
+      "lyric": "Intro D: 纽扣眼裂痕",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 5,
+      "pEn": "Macro shot of a silver button eye, mirror surface reflecting a pale moon, suddenly a sharp crack appears, faint amber light leaks from crack.",
+      "pCn": "纽扣眼睛特写，反射残月，出现裂痕，透出微弱琥珀光。",
+      "motion": "Last second, the crack snaps open with a subtle glow."
+    },
+    {
+      "id": 5,
+      "start": "00:17",
+      "lyric": "月亮在云层里像一枚褪色的银币",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 2,
+      "pEn": "Low angle shot looking up at a hazy crescent moon behind thick ink-style clouds, desaturated colors, silver coins falling metaphor.",
+      "pCn": "仰拍，厚重云层后的朦胧残月，低饱和度，如褪色银币。",
+      "motion": "Clouds drifting slowly across the moon."
+    },
+    {
+      "id": 6,
+      "start": "00:24",
+      "lyric": "我站在田埂中央守着这一方贫瘠",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 2,
+      "pEn": "Full shot, scarecrow standing alone on a narrow dirt path, surrounding wheat is grey and dry, heavy atmosphere, cinematic lighting.",
+      "pCn": "全景，稻草人孤立在田埂，周围是灰色干枯麦田，沉重氛围。",
+      "motion": "Slow track right, emphasizing the isolation."
+    },
+    {
+      "id": 7,
+      "start": "00:30",
+      "lyric": "寒鸦嘲笑我的身体装满了枯黄的秘密",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 3,
+      "pEn": "Medium shot, black crows landing on the scarecrow's wooden arms, squawking animation, detailed feathers, ink strokes.",
+      "pCn": "中景，黑鸦落在稻草人木质手臂上，鸣叫，羽毛细节。",
+      "motion": "Crow landing and fluttering wings."
+    },
+    {
+      "id": 8,
+      "start": "00:39",
+      "lyric": "风一吹就发出空洞的叹息",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 3,
+      "pEn": "Medium close shot, wind blowing through the scarecrow's hollow chest, straw dust particles flying in the wind, melancholic lighting.",
+      "pCn": "中近景，风吹过空洞胸膛，飞出的秸秆粉尘，忧郁光效。",
+      "motion": "Subtle organic sway of the garment."
+    },
+    {
+      "id": 9,
+      "start": "00:46",
+      "lyric": "人们说智慧是一种闪光的硬物",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 4,
+      "pEn": "POV shot, looking at a distant village with warm glowing lights forming geometric sharp shapes, bokeh effect, contrast between cold field and warm lights.",
+      "pCn": "主观视角，望向远方村庄，灯火如几何闪烁，焦外虚化。",
+      "motion": "Focus shifting from foreground straw to distant lights."
+    },
+    {
+      "id": 10,
+      "start": "00:54",
+      "lyric": "能看清远方的路和命运的地图",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 4,
+      "pEn": "Extreme wide shot, a golden glowing railway line appearing on the horizon like a map of destiny, ethereal glow, cinematic perspective.",
+      "pCn": "极远景，地平线升起金色发光的轨道，如命运地图，空灵感。",
+      "motion": "Slow camera push forward along the ground."
+    },
+    {
+      "id": 11,
+      "start": "01:01",
+      "lyric": "我摸着胸口只有干燥的纤维和土",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 3,
+      "pEn": "Close-up of wooden fingers touching the edge of the chest hole, rough wood texture vs dry fabric, earthy tones.",
+      "pCn": "特写，木质手指抚摸胸口孔洞，粗糙质感，大地色调。",
+      "motion": "Hand trembling slightly."
+    },
+    {
+      "id": 12,
+      "start": "01:08",
+      "lyric": "在每一个深夜把自己反复地缝补",
+      "act": "Act I: Lost",
+      "actClass": "act-I",
+      "intensity": 3,
+      "pEn": "High angle shot, scarecrow's head down, scattered ropes and needles on the dark soil, moonlight shadow.",
+      "pCn": "俯拍，稻草人垂头，地上散落麻绳，月光阴影。",
+      "motion": "Static, sorrowful stillness."
+    },
+    {
+      "id": 13,
+      "start": "01:13",
+      "lyric": "我不想要什么大脑 (Chorus)",
+      "act": "Act II: Seeking",
+      "actClass": "act-II",
+      "intensity": 7,
+      "pEn": "Action shot, scarecrow pulling its wooden leg out of the ground, black vines curling around the legs, transformation begins, dramatic motion blur.",
+      "pCn": "动态镜头，拔出腿，黑色藤蔓缠绕，转化开始，动态模糊。",
+      "motion": "Powerful pull-up motion, ground cracks."
+    },
+    {
+      "id": 14,
+      "start": "01:23",
+      "lyric": "我宁愿在这荒野听风在麦浪里奔跑",
+      "act": "Act II: Seeking",
+      "actClass": "act-II",
+      "intensity": 6,
+      "pEn": "Tracking shot, scarecrow running through the field, background blurred into purple and dark blue lines, glowing blue lantern in hand.",
+      "pCn": "跟拍，在麦田奔跑，背景化作紫色虚影，手提蓝色灯火。",
+      "motion": "Fast forward motion tracking the runner."
+    },
+    {
+      "id": 15,
+      "start": "01:30",
+      "lyric": "可是为什么当我看向那条发光的轨道",
+      "act": "Act II: Seeking",
+      "actClass": "act-II",
+      "intensity": 7,
+      "pEn": "Profile shot, scarecrow stopping, looking at the soaring amber track, high contrast, radiant light reflecting on the body.",
+      "pCn": "侧拍，停下注视高耸的琥珀色轨道，强对比，光芒映射全身。",
+      "motion": "Quick camera stop and tilt up."
+    },
+    {
+      "id": 16,
+      "start": "01:38",
+      "lyric": "心底却有一个声音在疯狂地叫嚣",
+      "act": "Act II: Seeking",
+      "actClass": "act-II",
+      "intensity": 8,
+      "pEn": "Extreme close-up of eye, the silver surface ripples like water, intense amber fire spinning inside, pupils dilating.",
+      "pCn": "眼部特写，银色眼面如水波动，琥珀色火焰旋转。",
+      "motion": "Zoom into the pupil rapidly."
+    },
+    {
+      "id": 17,
+      "start": "01:44",
+      "lyric": "你是不是比他们想象的更骄傲？",
+      "act": "Act II: Seeking",
+      "actClass": "act-II",
+      "intensity": 7,
+      "pEn": "Full shot, back of the scarecrow, the wind-up key spinning violently with sparks flying out, dramatic lighting from the key.",
+      "pCn": "全景背影，发条钥匙疯狂旋转，火花飞溅，戏剧性光影。",
+      "motion": "Key rotation with high speed blurring."
+    },
+    {
+      "id": 18,
+      "start": "01:52",
+      "lyric": "(Musical Break - Transition)",
+      "act": "Act II: Seeking",
+      "actClass": "act-II",
+      "intensity": 6,
+      "pEn": "Montage: Scarecrow traversing through a dark obsidian forest, black bandages wrapping around the body like snakes.",
+      "pCn": "蒙太奇：穿梭黑曜石森林，黑色绷带如蛇般缠绕全身。",
+      "motion": "Quick cuts of different forest terrains."
+    },
+    {
+      "id": 19,
+      "start": "02:07",
+      "lyric": "他们经过我身边带着自诩聪明的傲慢",
+      "act": "Act II: Seeking",
+      "actClass": "act-II",
+      "intensity": 5,
+      "pEn": "POV shot, observing gray faceless humanoid silhouettes walking by, they are rigid and mechanical, desaturated world.",
+      "pCn": "主观视角，观察灰色无面人剪影走过，僵硬机械感，无色世界。",
+      "motion": "Slow scan of the crowd."
+    },
+    {
+      "id": 20,
+      "start": "02:14",
+      "lyric": "讨论着得失、计算着明天的胜算",
+      "act": "Act II: Seeking",
+      "actClass": "act-II",
+      "intensity": 5,
+      "pEn": "Close-up on silhouettes' hands holding abacuses and gears, clunky movements, cold metallic aesthetic.",
+      "pCn": "特写，剪影手持算盘和齿轮，动作滞涩，冰冷金属感。",
+      "motion": "Stepped, stop-motion style movement."
+    },
+    {
+      "id": 21,
+      "start": "02:22",
+      "lyric": "我却在观察一片落叶下坠的曲线",
+      "act": "Act III: Awakening",
+      "actClass": "act-III",
+      "intensity": 8,
+      "pEn": "Macro shot, a single glowing red leaf falling in slow motion against pitch black space, forming a streak of light, ethereal.",
+      "pCn": "微距特写，一片发光的红叶在漆黑中慢动作下坠，留下光痕。",
+      "motion": "Fluid, elegant downward spiral."
+    },
+    {
+      "id": 22,
+      "start": "02:28",
+      "lyric": "和夕阳落下时那一抹温柔的红线",
+      "act": "Act III: Awakening",
+      "actClass": "act-III",
+      "intensity": 8,
+      "pEn": "Wide angle, a horizontal blood-red sun line cutting through the sky, scarecrow's body becoming translucent and glowing.",
+      "pCn": "广角，地平线血色夕阳光割裂天空，身体开始半透明发光。",
+      "motion": "The sun line expanding slowly."
+    },
+    {
+      "id": 23,
+      "start": "02:33",
+      "lyric": "我不想要什么大脑 (Chorus 2)",
+      "act": "Act III: Awakening",
+      "actClass": "act-III",
+      "intensity": 10,
+      "pEn": "Epic action shot, scarecrow running under the moonlight, body bursting with amber light, tearing through the rags, dramatic sparks.",
+      "pCn": "史诗动态，月下奔跑，身体爆裂琥珀光，撕碎罩衫，火星飞溅。",
+      "motion": "Explosive speed, ground burning under footsteps."
+    },
+    {
+      "id": 24,
+      "start": "02:43",
+      "lyric": "我宁愿在这荒野听风在麦浪里奔跑",
+      "act": "Act III: Awakening",
+      "actClass": "act-III",
+      "intensity": 9,
+      "pEn": "Low machine tracking shot, the heat from the scarecrow sets the dry wheat on fire, a path of flames through the darkness.",
+      "pCn": "低机位跟拍，跑过的热量点燃麦田，在黑暗中开辟火路。",
+      "motion": "Fast tracking through rising fire."
+    },
+    {
+      "id": 25,
+      "start": "02:50",
+      "lyric": "可是为什么当我看向那条发光的轨道",
+      "act": "Act III: Awakening",
+      "actClass": "act-III",
+      "intensity": 9,
+      "pEn": "Close-up, the amber railway track reflected in the eyes, now occupying the entire iris, screen-space emissive glow.",
+      "pCn": "特写，琥珀轨道完全占据眼球反射，全屏溢光效果。",
+      "motion": "Camera zooming into the eye reflection."
+    },
+    {
+      "id": 26,
+      "start": "02:56",
+      "lyric": "心底却有一个声音在疯狂地叫嚣",
+      "act": "Act III: Awakening",
+      "actClass": "act-III",
+      "intensity": 10,
+      "pEn": "Scarecrow's wind-up key snaps and flies off into the air, slow motion, detailed debris, inner core of light revealed.",
+      "pCn": "发条钥匙崩飞向天空，慢动作，碎片细节，露出内部光核。",
+      "motion": "Bullet time, objects flying towards camera."
+    },
+    {
+      "id": 27,
+      "start": "03:05",
+      "lyric": "你是不是比他们想象的更重要？",
+      "act": "Act III: Awakening",
+      "actClass": "act-III",
+      "intensity": 9,
+      "pEn": "Portrait shot, scarecrow looking directly at camera, eyes fully replaced by swirling galaxies of fire, powerful and divine.",
+      "pCn": "正面肖像，注视镜头，眼球被旋转的火焰星系取代，神性感。",
+      "motion": "Extreme stillness amidst flying fire particles."
+    },
+    {
+      "id": 28,
+      "start": "03:13",
+      "lyric": "如果思考是痛苦的牢 (Bridge)",
+      "act": "Act III: Awakening",
+      "actClass": "act-III",
+      "intensity": 9,
+      "pEn": "Wide shot, the scarecrow's body cracking from within, intense white light leaking through every crack, ink lines dissolving.",
+      "pCn": "全景，身体内部裂开，万丈白光透射，水墨线条溶解。",
+      "motion": "Deformation and light expansion."
+    },
+    {
+      "id": 29,
+      "start": "03:23",
+      "lyric": "我愿用余生换思考",
+      "act": "Act III: Awakening",
+      "actClass": "act-III",
+      "intensity": 9,
+      "pEn": "Close-up on chest, the rose hole is now a pulsing core of white fire, rhythmic heartbeat animation of light.",
+      "pCn": "胸口特写，玫瑰孔洞变为跳动的白火核心，光之律动。",
+      "motion": "High frequency pulse of emission."
+    },
+    {
+      "id": 30,
+      "start": "03:31",
+      "lyric": "哪怕代价是被烈火焚烧",
+      "act": "Act III: Awakening",
+      "actClass": "act-III",
+      "intensity": 10,
+      "pEn": "Extreme wide shot, the entire scene engulfed in a white-hot flash of fire, pure blinding light swallowing the darkness.",
+      "pCn": "极远景，全屏被白炽火光吞噬，纯粹的强光淹没黑暗。",
+      "motion": "Screen fading to pure white."
+    },
+    {
+      "id": 31,
+      "start": "03:39",
+      "lyric": "(Outro Break)",
+      "act": "Act IV: Returning",
+      "actClass": "act-IV",
+      "intensity": 4,
+      "pEn": "High key lighting, a fresh green wheat field emerging from the white void, soft morning mist, peaceful and serene.",
+      "pCn": "高调摄影，从纯白虚无中浮现翠绿麦田，晨雾，宁静平和。",
+      "motion": "Slow fade-in of landscape."
+    },
+    {
+      "id": 32,
+      "start": "03:53",
+      "lyric": "我没有大脑...",
+      "act": "Act IV: Returning",
+      "actClass": "act-IV",
+      "intensity": 3,
+      "pEn": "Medium shot, a new form of the scarecrow made of white porcelain and gold, translucent skin, soft sunlight.",
+      "pCn": "中景，白瓷与黄金材质的新形态，半透明皮肤，柔和日光。",
+      "motion": "Subtle head tilt, eyes opening slowly."
+    },
+    {
+      "id": 33,
+      "start": "04:01",
+      "lyric": "可我为何...感到了思考...",
+      "act": "Act IV: Returning",
+      "actClass": "act-IV",
+      "intensity": 3,
+      "pEn": "Macro of the new eyes, ink droplets melting into a field of blooming flowers inside the iris, beautiful and deep.",
+      "pCn": "新眼特写，瞳孔内墨滴化作繁花盛开，唯美而深邃。",
+      "motion": "Ink bleed transition animation."
+    },
+    {
+      "id": 34,
+      "start": "04:06",
+      "lyric": "(Instrumental A)",
+      "act": "Act IV: Returning",
+      "actClass": "act-IV",
+      "intensity": 4,
+      "pEn": "Wide shot, the scarecrow walking barefoot on the grass, white flowers blooming instantly where it steps, ice melting.",
+      "pCn": "全景，赤脚走过草地，步履生花，冰霜消融。",
+      "motion": "Slow tracking of the feet."
+    },
+    {
+      "id": 35,
+      "start": "04:20",
+      "lyric": "(Instrumental B)",
+      "act": "Act IV: Returning",
+      "actClass": "act-IV",
+      "intensity": 3,
+      "pEn": "Long shot pulling back, the figure dissolving into golden dust particles, blending into the sunrise sky.",
+      "pCn": "远景拉回，身影化作金色粒子，融入黎明的天空。",
+      "motion": "Extreme zoom out until the figure disappears."
+    },
+    {
+      "id": 36,
+      "start": "04:32",
+      "lyric": "我有灵魂",
+      "act": "Act IV: Returning",
+      "actClass": "act-IV",
+      "intensity": 2,
+      "pEn": "Black screen, elegant handwritten calligraphy fading in: 'I Have a Soul', minimalist aesthetic.",
+      "pCn": "黑屏，优雅的手写体字迹：'我有灵魂'，极简美学。",
+      "motion": "Text breathing fade-in."
+    }
+  ]
+}
