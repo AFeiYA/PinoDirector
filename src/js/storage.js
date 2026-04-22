@@ -20,6 +20,16 @@ export const Storage = {
     return res.json();
   },
 
+  async saveProjectFull(projectId, shots) {
+    const res = await fetch(`${API_BASE}/project/${projectId}/save-project-full`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ shots })
+    });
+    if (!res.ok) throw new Error('Failed to save full project');
+    return res.json();
+  },
+
   // --- Frames (Images) ---
 
   async loadFrameList(projectId) {

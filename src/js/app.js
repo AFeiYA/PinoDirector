@@ -16,7 +16,7 @@ const el = {
   uploadGrid: document.getElementById('upload-grid'),
   progressText: document.getElementById('progress-text'),
   fileInput: document.getElementById('file-input'),
-  btnExport: document.getElementById('btn-export'),
+  btnSave: document.getElementById('btn-save'),
   syncStatus: document.getElementById('sync-status'),
 };
 
@@ -220,14 +220,16 @@ function setupEvents(projectId) {
     el.fileInput.value = '';   // reset so same file can be re-selected
   };
 
-  // Export as JSON download
-  el.btnExport.onclick = async () => {
-    const data = await Storage.loadShots(projectId);
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `${projectId}_shots.json`;
-    a.click();
+  // Save Full Project to Disk
+  el.btnSave.onclick = async () => {
+    try {
+      el.syncStatus.innerText = 'Saving to shots.json...';
+      await Storage.saveProjectFull(projectId, State.shots);
+      el.syncStatus.innerText = 'shots.json updated!';
+      setTimeout(() => el.syncStatus.innerText = 'Connected', 2000);
+    } catch (err) {
+      el.syncStatus.innerText = 'Save failed';
+    }
   };
 
   // Copy buttons

@@ -71,6 +71,22 @@ app.post('/api/project/:id/save-prompt', (req, res) => {
   }
 });
 
+// --- Save full project shots ---
+app.post('/api/project/:id/save-project-full', (req, res) => {
+  try {
+    const { shots } = req.body;
+    const shotsPath = join(PROJECTS_DIR, req.params.id, 'shots.json');
+    const data = JSON.parse(readFileSync(shotsPath, 'utf-8'));
+
+    data.shots = shots;
+    writeFileSync(shotsPath, JSON.stringify(data, null, 2), 'utf-8');
+
+    res.json({ ok: true, message: 'shots.json updated' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // --- Save frame image ---
 const upload = multer({
   storage: multer.diskStorage({
